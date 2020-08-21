@@ -148,7 +148,7 @@
      background-attachment: fixed;
      background-size: cover;
      position: relative;
-     height: 500;
+     height: 100vh;
      
  }
  .overlay{
