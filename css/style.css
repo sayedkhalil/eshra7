@@ -1,0 +1,437 @@
+ /* INDEX
+ header
+ home
+ app
+ community
+ corces
+ about
+ footer */
+ 
+ /* ................................................................................................... */
+ /* GENERAL
+ color
+ section
+ font
+ padding&margin
+  */
+  .container{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    
+}
+.rl{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ 
+ body{
+     direction: rtl;
+ }
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ *{
+     font-family: 'Tajawal', sans-serif;
+     font-weight: bold;
+ }
+ .clear{ clear: both;}
+ .padding{
+     padding: 15;
+     margin: 15;
+ }
+ :root{
+     --color1:rgb(55, 143, 245);
+     --color2:red;
+ }
+ ul{
+     list-style-type: none;
+   }
+   a{
+       text-decoration: none;
+       
+   }
+
+ /* ......................................................................................................... */
+ /* HEADER */
+ .header{
+     width: 100%;
+     background-color:rgba(90, 90, 90, .6);
+     padding: 10;
+     position: fixed;
+     z-index: 10;
+ }
+ .logo{
+     width: 120;
+     height: 30;
+     float: left;
+     margin-left: 40;
+ }
+ .navheader1{
+     width: 55%;
+     float: left;
+     position: relative;
+ }
+ .navheader2{
+     width: 30%;
+     float: left;
+ }
+ .nav1{
+     direction: rtl;
+ }
+  .nav1> li{
+     display: inline-block;
+     margin-right: 10;
+ }
+ .menu{
+     position: relative;
+    
+ }
+ .menu1{
+     position: absolute;
+     top: 30;
+     left: -40;
+     background-color:rgba(116, 162, 248,.7);
+     opacity: 0;
+     visibility: hidden;
+     }
+ .nav2{
+        direction: rtl;
+     }
+ .nav2 li{
+     display: inline-block;
+     padding: 5;
+     }
+ .header li{
+     margin-left: 15;
+     
+ }
+ .header a{
+     display: block;
+     color: white;
+ }
+ .menu1 li a{
+     width: 100;
+     height: 40;
+    margin: auto;
+    text-align:center ;
+    }
+    .menu:hover .menu1{
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .5s;
+    }
+    .menu:active .menu1{
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 2s;
+    }
+    .nav1> li> a::after{
+    content: " ";
+    display: block;
+    width:0%;
+    height: 3;
+    background-color: rgb(10, 125, 202);
+    margin-top: 5;
+    }
+    .nav1> li> a:hover::after{
+        width: 100%;
+        transition: .5s;
+    }
+/* ......................................................................................................... */
+ /* HOME */
+ .home{
+     width: 100%;
+     background-image: url(../imges/smiling-students-with-backpacks_1098-1220.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+     position: relative;
+     height: 500;
+     
+ }
+ .overlay{
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     padding: 50 30;
+     background-color:rgba(0, 0, 0,.5);
+ }
+.home img{
+    width: 400;
+    height: 100;
+    margin-right: 30;
+    margin-top:80 ;
+}
+.togals{
+color: rgb(155, 211, 243);
+margin-right: 280;
+}
+.home span{
+position: absolute;
+top: 50;
+left: 20;
+}
+.home span a{
+    display: inline-block;
+    margin-right: 30;
+    color: var(--color1);
+    }
+.home span a::after{
+        content: " ";
+        background-color: white;
+        width: 0%;
+        height: 3;
+        margin-top:6 ;
+        display: block;
+        }
+ .home span a:hover::after{
+            width: 100%;
+            transition: .5s;
+        }
+.des{
+    margin-top: 50;
+    color: white;
+    font-size: x-large;
+    word-spacing: 8;
+    line-height: 2;
+}
+.home button{
+    background-color: var(--color1);
+    width: 150;
+    height: 40;
+    border: none;
+    border-radius:10% ;
+    margin-top: 20;
+    margin-right: 500;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    box-shadow: black;
+}
+/* ......................................................................................................... */
+ /* app section */
+ .home-app{
+    width: 100%;
+    background-image: url(../imges/app.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500;
+    
+  } 
+.app-h2{
+    text-align: left;
+    margin-left: 90;
+    color:var(--color1);
+    padding: 50;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.app-p{
+    text-align: left;
+    margin-left: 60;
+    color:black;
+    font-size:x-large;
+    font-weight: bold;
+    
+}
+.icon{
+    text-align: left;
+    margin-left:160 ;
+    vertical-align: middle;
+    margin-top: 30;
+    
+}
+.icon a {
+    display: inline-block;
+    width: 150;
+    height: 50;
+    text-align: right;
+    vertical-align: middle;
+}
+.icon a img{
+    width: 150;
+    vertical-align: middle;
+   
+}
+.iphon{
+    height: 60;
+    margin-top: 15;
+}
+.and{
+    height: 50;
+}
+ 
+ /* ......................................................................................................... */
+ /* community */
+ .com-des{
+     margin-right: 500;
+     text-align: center;
+     font-weight: bolder;
+     font-size: x-large;
+ }
+ .com-box{
+     width: 30%;
+     float: left;
+     margin-top: 60;
+     border: 1px var(--color1) solid;
+     padding: 12;
+     background-color: rgb(226, 224, 224);
+     border-radius: 5%;
+     height: 100;
+ }
+ .com-box p{
+     color: var(--color1);
+ }
+ .com-box a{
+     display: block;
+     color: royalblue;
+     margin-top: 10;
+ }
+ .com-btn{
+     background-color: var(--color1);
+     width: 120;
+     height: 50;
+     border: none;
+     border-radius: 5%;
+     color: white;
+     text-align: center;
+     cursor: pointer;
+     margin: 50 auto;
+     font-size:large;
+     margin-left: 20;
+ }
+ .btn{
+     display: block;
+    margin-right: 40%;
+ }
+ .com-logo:hover{
+opacity: .5;
+transition: .5s;
+ }
+/* ......................................................................................................... */
+ /* corces*/
+ .cor{
+     background-color: silver;
+     padding: 30;
+ }
+ .cor h2{
+     text-align: center;
+     font-size: 60;
+     font-weight: bolder;
+     color: var(--color1);
+     margin: 30;
+
+ }
+ .cor p {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 50;
+     }
+     .cor-box{
+         width: 16%;
+         float: right;
+         margin-right: 20;
+         margin-left: 20;
+         margin-bottom: 60;
+     }
+     .cor-box img{
+         width: 100;
+         height: 100;
+     }
+     .cor-box h3{
+         color: var(--color1);
+         text-align: right;
+         margin-top: 10;
+     }
+     /* ......................................................................................................... */
+ /* about*/
+
+ .about h2{
+    text-align: center;
+    font-size: 60;
+    font-weight: bolder;
+    color: var(--color1);
+    margin: 60;
+
+}
+.about .container > h2::after{
+    content: " ";
+    display: block;
+    width: 25%;
+    height: 3;
+    background-color: blue;
+    margin: 6 auto;
+}
+.about-box {
+    width: 30%;
+    float: right;
+    margin-bottom: 80;
+}
+.about-box img{
+    width: 100;
+    height: 100;
+    border-radius: 50%;
+    border: rgba(116, 162, 248,.7);
+    display: block;
+    margin: auto;
+   }
+.about-box h2{
+    text-align: center;
+    color: var(--color1);
+    margin: 10;
+    font-size: large;
+}
+.about-box p{
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+ /* ......................................................................................................... */
+ /* about*/
+ .footer{
+     padding: 50;
+     background-color: dimgrey;
+     }
+     .footer-m{
+         display: block;
+         width: 70%;
+       list-style-type: none;
+       margin:auto;
+     }
+     .footer-m li{
+         display: inline-block;
+         margin-left: 20;
+         text-align: center;
+         width: 150;
+         margin-bottom:50 ;
+         
+     }
+     .footer-m li a{
+        color: rgb(233, 162, 10);
+
+     }
+     .kk li i{
+         font-size: larger;
+         color: rgb(1, 1, 14);
+         width: 80%;
+         margin-bottom: 20;
+
+     }
+ .kk{
+     margin-right: 45%;
+ }
+ .footer h3{
+     text-align: center;
+ }
+ .footer-m li a:hover{
+    color: black;
+    transition: .5s;
+
+ }
